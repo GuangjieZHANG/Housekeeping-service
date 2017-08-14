@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-reverse-engineering PUBLIC "-//Hibernate/Hibernate Reverse Engineering DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-reverse-engineering-3.0.dtd" >
+
+<hibernate-reverse-engineering>
+	<table name="ordered" catalog="housework">
+		<primary-key>
+			<generator class="uuid.hex"></generator>
+		</primary-key>
+	</table>
+	<table name="ordering" catalog="housework">
+		<primary-key>
+			<generator class="uuid.hex"></generator>
+		</primary-key>
+	</table>
+	<table name="worker" catalog="housework">
+		<primary-key>
+			<generator class="uuid.hex"></generator>
+		</primary-key>
+	</table>
+	<table name="user" catalog="housework">
+		<primary-key>
+			<generator class="uuid.hex"></generator>
+		</primary-key>
+	</table>
+	<table name="unorder" catalog="housework">
+		<primary-key>
+			<generator class="uuid.hex"></generator>
+		</primary-key>
+	</table>
+	<table name="service" catalog="housework">
+		<primary-key>
+			<generator class="uuid.hex"></generator>
+		</primary-key>
+	</table>
+	<table name="removeorder" catalog="housework">
+		<primary-key>
+			<generator class="uuid.hex"></generator>
+		</primary-key>
+	</table>
+	<table name="remark" catalog="housework">
+		<primary-key>
+			<generator class="uuid.hex"></generator>
+		</primary-key>
+	</table>
+	<table name="role" catalog="housework">
+		<primary-key>
+			<generator class="native"></generator>
+		</primary-key>
+	</table>
+	<table name="menu" catalog="housework">
+		<primary-key>
+			<generator class="assigned"></generator>
+		</primary-key>
+	</table>
+	<table name="account" catalog="housework">
+		<primary-key>
+			<generator class="assigned"></generator>
+		</primary-key>
+	</table>
+	<table name="leaverecord" catalog="housework">
+		<primary-key>
+			<generator class="uuid.hex"></generator>
+		</primary-key>
+	</table>
+	<table name="role_menu" catalog="housework">
+		<primary-key>
+			<generator class="assigned"></generator>
+		</primary-key>
+	</table>
+	<table name="servicetype" catalog="housework">
+		<primary-key>
+			<generator class="uuid.string"></generator>
+		</primary-key>
+	</table>
+	<table name="collection" catalog="armap">
+		<primary-key>
+			<generator class="uuid.hex"></generator>
+		</primary-key>
+	</table>
+<table name="user" catalog="armap">
+	<primary-key>
+		<generator class="uuid.hex"></generator>
+	</primary-key>
+</table>
+</hibernate-reverse-engineering>

@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="80dp"
+        android:orientation="horizontal"
+        android:background="#0082e4">
+
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:layout_width="60dp"
+            android:layout_height="fill_parent"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="30dp"
+            app:riv_border_color="#333333"
+            app:riv_border_width="2dp"
+            app:riv_corner_radius="10dp"
+            app:riv_mutate_background="true"
+            app:riv_oval="true"
+            android:background="@drawable/aunt_logo"/>
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:textSize="20dp"
+            android:textColor="#ffffff"
+            android:gravity="center"
+            android:id="@+id/mess"
+            android:text="王美丽  13781800000"/>
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="105dp"
+        android:orientation="horizontal"
+        android:layout_marginTop="5dp"
+        >
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_weight="0.25"
+            android:layout_height="fill_parent"
+            android:background="@drawable/dd1"
+            android:id="@+id/goorder1"/>
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_weight="0.25"
+            android:layout_height="fill_parent"
+
+            android:background="@drawable/dd2"
+            android:id="@+id/goorder2"/>
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_weight="0.25"
+            android:layout_height="fill_parent"
+
+            android:background="@drawable/dd3"
+            android:id="@+id/goorder3"/>
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_weight="0.25"
+            android:layout_height="fill_parent"
+
+            android:background="@drawable/dd4"
+            android:id="@+id/goorder4"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginTop="5dp"
+        android:background="#ffffff"
+        android:orientation="vertical">
+   <TextView
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_marginLeft="20dp"
+       android:layout_marginTop="10dp"
+       android:text="姓名：王美丽"
+       android:textSize="20dp"
+       android:id="@+id/myname"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:text="年龄：35岁"
+            android:textSize="20dp"
+            android:id="@+id/myage"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"
+            android:text="工种：地板打蜡/大扫除/真皮沙发保养/日常保洁"
+            android:textSize="20dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:text="评价：4.5星"
+            android:textSize="20dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:text="本月已挣：2250元"
+            android:textSize="20dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:text="自我介绍：勤劳善良，手脚麻利"
+            android:textSize="20dp"
+            android:id="@+id/myintro"/>
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="horizontal">
+            <Button
+                android:layout_width="120dp"
+                android:layout_height="45dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp"
+                android:text="修改个人信息"
+                android:textColor="#ffffff"
+                android:background="#0082e4"
+                android:id="@+id/modifyinfo"/>
+           <!-- <Button
+                android:layout_width="95dp"
+                android:layout_height="45dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp"
+                android:text="修改密码"
+                android:textColor="#ffffff"
+                android:background="#0082e4"
+                android:id="@+id/modifypsw"/>-->
+
+              <Button
+                android:layout_width="120dp"
+                android:layout_height="45dp"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp"
+                android:text="去请假"
+                android:textColor="#ffffff"
+                android:background="#0082e4"
+                android:id="@+id/out"/>
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+</LinearLayout>

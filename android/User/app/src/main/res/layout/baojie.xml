@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="210dp"
+        android:background="@drawable/baojie"/>
+    <TextView
+        android:layout_marginTop="5dp"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:text="日常保洁服务项目"
+        android:textSize="22dp"
+        android:gravity="center"/>
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="130dp"
+        android:textSize="18dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="20dp"
+        android:text="简介：日常保洁是指在保洁服务中，每日需要清洁的项目内容。日常保洁工作由扫、擦、洗等各种作业组成，通过日常保洁可以减少物业装饰材料的自然损坏和人为磨损，延长物业的使用年限，保持物业美观的效果。"
+        android:id="@+id/baojieintro"/>
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="80dp"
+        android:textSize="18dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="20dp"
+        android:text="服务价格：1元/小时"
+        android:id="@+id/baojieprice"/>
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:background="@color/blue"
+        android:textColor="@color/white"
+        android:textSize="15dp"
+        android:text="查看阿姨推荐"
+        android:id="@+id/goaunt_baojie"/>
+    <!--<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_marginTop="5dp"
+        android:layout_height="match_parent"
+        tools:context="cn.ac.ucas.yp.uiwidgettest.ListViewActivity">
+
+    </RelativeLayout>-->
+</LinearLayout>

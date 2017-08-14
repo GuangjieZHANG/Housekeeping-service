@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+   <!-- <LinearLayout
+        android:id="@+id/ll_serach"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        &lt;!&ndash; ##e0ffffff半透明背景色颜色   android:alpha="0.5"透明方法 &ndash;&gt;
+
+        <EditText
+            android:id="@+id/et_serach"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:alpha="0.5"
+            android:gravity="center"
+            android:hint="请输入搜索内容" />
+
+        <Button
+            android:id="@+id/bt_search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/blue"
+            android:text="点击搜索"
+            android:textColor="@color/white"/>
+    </LinearLayout>-->
+    <com.baidu.mapapi.map.MapView
+        android:layout_width="fill_parent"
+        android:layout_height="350dp"
+        android:clickable="true"
+        android:id="@+id/ordermap"/>
+    <TextView
+
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:id="@+id/location_info"/>
+<Button
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/blue"
+    android:layout_gravity="center"
+    android:textSize="20dp"
+    android:textColor="@color/white"
+    android:text="  确定  "
+    android:id="@+id/submit_map"/>
+</LinearLayout>

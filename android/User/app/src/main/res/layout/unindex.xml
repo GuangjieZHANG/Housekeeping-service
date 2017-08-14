@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="80dp"
+        android:orientation="horizontal"
+        android:background="#0082e4">
+
+        <com.makeramen.roundedimageview.RoundedImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_width="60dp"
+            android:layout_height="fill_parent"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="30dp"
+            app:riv_border_color="#333333"
+            app:riv_border_width="2dp"
+            app:riv_corner_radius="10dp"
+            app:riv_mutate_background="true"
+            app:riv_oval="true"
+            android:src="@drawable/unlog"/>
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:textSize="20dp"
+                android:textColor="#ffffff"
+                android:gravity="center"
+                android:text="注册/登陆"
+                android:textStyle="bold"
+                android:id="@+id/gologin1"
+                android:clickable="true"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="200dp">
+        <com.example.http.ImageBannerFrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+            android:id="@+id/unindex"
+            android:focusable="true"
+            >
+    </com.example.http.ImageBannerFrameLayout>
+    </LinearLayout>
+
+
+<LinearLayout
+    android:layout_width="fill_parent"
+    android:layout_height="75dp"
+    android:layout_marginTop="10dp"
+    android:background="#ffffff"
+    android:orientation="horizontal"
+>
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="65dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="20dp"
+        android:background="@drawable/dasaochu"/>
+<TextView
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:text="大扫除"
+    android:gravity="center"
+    android:textSize="20dp"
+    android:duplicateParentState="true"
+    android:id="@+id/godasaochu"
+    />
+</LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="75dp"
+        android:layout_marginTop="5dp"
+        android:background="#ffffff"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="65dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/baojie"/>
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:text="日常保洁"
+            android:gravity="center"
+            android:textSize="20dp"
+            android:duplicateParentState="true"
+            android:id="@+id/gobaojie"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="75dp"
+        android:layout_marginTop="5dp"
+        android:background="#ffffff"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="65dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/dala"/>
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:text="地板打蜡"
+            android:gravity="center"
+            android:textSize="20dp"
+            android:duplicateParentState="true"
+            android:id="@+id/godala"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="75dp"
+        android:layout_marginTop="5dp"
+        android:background="#ffffff"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="65dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/shafa"/>
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:text="真皮沙发保养"
+            android:gravity="center"
+            android:textSize="20dp"
+            android:duplicateParentState="true"
+            android:id="@+id/goshafa"/>
+    </LinearLayout>
+
+</LinearLayout>

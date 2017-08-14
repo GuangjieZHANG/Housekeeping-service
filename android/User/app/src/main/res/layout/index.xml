@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="80dp"
+        android:orientation="horizontal"
+        android:background="#0082e4">
+
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:layout_width="60dp"
+            android:layout_height="fill_parent"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="30dp"
+            app:riv_border_color="#333333"
+            app:riv_border_width="2dp"
+            app:riv_corner_radius="10dp"
+            app:riv_mutate_background="true"
+            app:riv_oval="true"
+            android:background="@drawable/touxiang"/>
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:textSize="25dp"
+            android:textColor="#ffffff"
+            android:gravity="center"
+            android:id="@+id/mess"/>
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="105dp"
+        android:orientation="horizontal"
+        android:layout_marginTop="5dp"
+       >
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_weight="0.25"
+            android:layout_height="fill_parent"
+            android:background="@drawable/dd1"
+            android:id="@+id/goorder1"/>
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_weight="0.25"
+            android:layout_height="fill_parent"
+
+            android:background="@drawable/dd2"
+            android:id="@+id/goorder2"/>
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_weight="0.25"
+            android:layout_height="fill_parent"
+
+            android:background="@drawable/dd3"
+            android:id="@+id/goorder3"/>
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_weight="0.25"
+            android:layout_height="fill_parent"
+
+            android:background="@drawable/dd4"
+            android:id="@+id/goorder4"/>
+
+    </LinearLayout>
+
+<LinearLayout
+    android:layout_width="fill_parent"
+    android:layout_height="85dp"
+    android:layout_marginTop="5dp"
+    android:background="#ffffff"
+    android:orientation="horizontal">
+    <Button
+        android:layout_width="130dp"
+        android:layout_height="55dp"
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp"
+        android:text="去下单"
+        android:textColor="#ffffff"
+        android:background="#0082e4"
+        android:id="@+id/goording"/>
+    <Button
+        android:layout_width="130dp"
+        android:layout_height="55dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp"
+
+        android:text="进入我的主页"
+        android:textColor="#ffffff"
+        android:background="#0082e4"
+        android:id="@+id/gomine"/>
+</LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="75dp"
+        android:layout_marginTop="5dp"
+        android:background="#ffffff"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="65dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/dasaochu"/>
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:text="大扫除"
+            android:gravity="center"
+            android:id="@+id/godasaochu1"
+            android:duplicateParentState="true"
+            android:textSize="20dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="75dp"
+        android:layout_marginTop="5dp"
+        android:background="#ffffff"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="65dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/baojie"/>
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:text="日常保洁"
+            android:duplicateParentState="true"
+            android:id="@+id/gobaojie1"
+            android:gravity="center"
+            android:textSize="20dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="75dp"
+        android:layout_marginTop="5dp"
+        android:background="#ffffff"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="65dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/dala"/>
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:text="地板打蜡"
+            android:duplicateParentState="true"
+            android:id="@+id/godala1"
+            android:gravity="center"
+            android:textSize="20dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="75dp"
+        android:layout_marginTop="5dp"
+        android:background="#ffffff"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="65dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/shafa"/>
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:text="真皮沙发保养"
+            android:duplicateParentState="true"
+            android:id="@+id/goshafa1"
+            android:gravity="center"
+            android:textSize="20dp"/>
+    </LinearLayout>
+
+</LinearLayout>

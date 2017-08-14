@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="100dp"
+        android:orientation="horizontal"
+        android:background="@color/white">
+    <ImageView
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:id="@+id/img"
+    android:layout_width="80dp"
+    android:layout_height="80dp"
+    />
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical"
+        android:background="#ffffff">
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:textSize="20dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="10dp"
+            android:text="姓名："
+            />
+
+        <TextView
+            android:id="@+id/level"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:textSize="20dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="10dp"
+            android:text="等级："
+            />
+
+    </LinearLayout>
+
+
+    </LinearLayout>
+
+
+

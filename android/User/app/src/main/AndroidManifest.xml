@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.user">
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/logo"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <!--用来注册启动界面活动-->
+        <activity
+            android:name=".Splash"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="com.alipay.sdk.app.H5PayActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:exported="false"
+            android:screenOrientation="behind">
+        </activity>
+        <activity
+            android:name="com.alipay.sdk.auth.AuthActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:exported="false"
+            android:screenOrientation="behind">
+        </activity>
+        <activity android:name=".OrdingActivity"></activity>
+        <activity android:name=".MineActivity"></activity>
+        <activity android:name=".MainActivity"></activity>
+        <activity android:name=".ModifyMineActivity"></activity>
+        <activity android:name=".LoginActivity"></activity>
+        <activity android:name=".Register"></activity>
+        <activity android:name=".UnindexActivity"></activity>
+        <activity android:name=".UnorderListActivity"></activity>
+        <activity android:name=".indexActivity"></activity>
+        <activity android:name=".Baojie"></activity>
+        <activity android:name=".Dala"></activity>
+        <activity android:name=".Dasaochu"></activity>
+        <activity android:name=".Shafa"></activity>
+        <activity android:name=".RemarkActivity"></activity>
+        <activity android:name=".MapActivity"></activity>
+        <activity android:name=".OrderingListActivity"></activity>
+        <activity android:name=".OrderedListActivity"></activity>
+        <activity android:name=".RemoveorderListActivity"></activity>
+        <activity android:name=".UnorderActivity"></activity>
+        <activity android:name=".OrderedActivity"></activity>
+        <activity android:name=".OrderingActivity"></activity>
+        <activity android:name=".RemoveorderActivity"></activity>
+        <activity android:name=".AuntActivity"></activity>
+        <activity android:name=".AuntBaojieActivity"></activity>
+        <activity android:name=".AuntDasaochuActivity"></activity>
+        <activity android:name=".AuntShafaActivity"></activity>
+        <activity android:name=".AuntDalaActivity"></activity>
+        <activity android:name=".FindPswActivity"></activity>
+
+
+        <!-- ATTENTION: This was auto-generated to add Google Play services to your project for
+             App Indexing.  See https://g.co/AppIndexing/AndroidStudio for more information. -->
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="6XDc8BWA5vlf5o7uqBAnPVPznP1AZfzz"
+            />
+
+        <!-- 百度地图定位服务 -->
+
+        <service
+            android:name="com.baidu.location.f"
+            android:enabled="true"
+            android:process=":remote" />
+
+    </application>
+
+</manifest>

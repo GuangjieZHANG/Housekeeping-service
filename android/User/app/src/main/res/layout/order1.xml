@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+<LinearLayout
+    android:layout_width="fill_parent"
+    android:layout_height="100dp"
+    android:background="#0082e4"
+    android:orientation="vertical">
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="您的此笔订单"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        android:textColor="#ffffff"
+        android:textSize="25dp"/>
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="待接单"
+        android:textColor="#ffffff"
+        android:gravity="center"
+        android:textSize="20dp"
+        android:layout_marginTop="5dp"/>
+</LinearLayout>
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="100dp">
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:text="用户名：宇宙第一帅"
+       android:layout_marginTop="15dp"
+        android:layout_marginLeft="30dp"
+        android:textSize="20dp"
+        android:id="@+id/unorderusername"/>
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:text="电话号码：13700000000"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="30dp"
+        android:textSize="20dp"
+        android:id="@+id/unorderuserphone"/>
+</LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="20dp"
+        >
+ <!--       <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:text="订单时间：2017-03-04 15：23"
+
+            android:layout_marginLeft="30dp"
+            android:textSize="15dp"/>-->
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:text="预约服务时间：2017-03-05 7：00"
+            android:id="@+id/unordertime"
+            android:layout_marginLeft="30dp"
+            android:textSize="20dp"
+            android:layout_marginTop="15dp"/>
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:text="服务类型：地板打蜡"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="30dp"
+            android:textSize="20dp"
+            android:id="@+id/unordertype"/>
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="60dp"
+            android:text="订单地址：陕西省西安市碑林区友谊西路127号"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="20dp"
+            android:textSize="20dp"
+            android:id="@+id/unorderadd"/>
+        <Button
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:background="@color/blue"
+            android:layout_gravity="center"
+            android:textColor="@color/white"
+            android:text="取消订单"
+            android:textSize="20dp"
+            android:id="@+id/modify"/>
+    </LinearLayout>
+
+</LinearLayout>

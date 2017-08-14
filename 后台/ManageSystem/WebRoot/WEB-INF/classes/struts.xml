@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+	"../WebRoot/WEB-INF/lib/struts-2.3.dtd">
+ 
+<struts>
+	<!-- 将对象交给spring管理 -->  
+    <constant name="struts.objectFactory" value="spring" />  
+	<!-- 配置struts2应用于开发模式 -->
+	<constant name="struts.devMode" value="true"/>
+	<!-- 配置Convention插件自动重加载映射 -->
+	<constant name="struts.convention.classes.reload" value="true"/>
+    <!-- 指定资源编码类型 -->  
+    <constant name="struts.i18n.encoding" value="UTF-8" />
+    <constant name="struts.convention.result.path" value="/WEB-INF" />
+    <constant name="struts.convention.result.flatLayout" value="false" />  
+	<constant name="struts.custom.i18n.resources" value="messageResource" />
+	
+	<constant name="struts.convention.default.parent.package" value="check-default" /> 
+	<!-- 设置临时文件上传路径 -->
+	<constant name="struts.multipart.saveDir" value="/tmp"/>
+	
+	<!--   一定要继承自convention-default -->        
+	<package name="check-default" extends="convention-default">                 
+		 
+		<interceptors>                  
+			<!--  你的拦截器      -->
+			<interceptor name="loginInterceptor" class="com.manage.action.interceptor.LoginInterceptor"></interceptor>	
+			<interceptor-stack name="checkStack">                                                            
+				   <!-- 在拦截器栈里引入你所加的拦截器 -->                                
+				<interceptor-ref name="loginInterceptor"> 
+					<param name="excludeActionName">SecurityCodeImage,Login_Login,user_login</param> 
+				</interceptor-ref>  
+				<interceptor-ref name="defaultStack"/>                       
+			</interceptor-stack>                   
+		</interceptors>                 
+		<default-interceptor-ref name="checkStack" />                  
+		<global-results>
+			<result name="tologin">login.jsp</result>
+		</global-results>      
+	</package>  
+	
+</struts>

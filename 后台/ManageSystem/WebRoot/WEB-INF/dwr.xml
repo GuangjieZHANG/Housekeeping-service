@@ -1,0 +1,18 @@
+<!DOCTYPE dwr PUBLIC
+    "-//GetAhead Limited//DTD Direct Web Remoting 3.0//EN"
+    "http://getahead.org/dwr/dwr30.dtd">
+<dwr>
+  <allow>
+     <!--将MyDwr类的hello方法暴露出来-->
+<!--      <create creator="new" javascript="MyDwr"> -->
+<!--               <param name="class" value="com.konghao.dwr.MyDwr" /> -->
+<!--               <include method="hello"/> -->
+<!--     </create> -->
+
+    <!-- this is a bad idea for live, but can be useful in testing -->
+    <!-- 测试阶段使用，运营阶段不要使用，异常处理-->
+    <convert converter="exception" match="java.lang.Exception"/>
+     <!-- convert元素用于数据类型转换，即java类和javascript之间相互转换，复杂对象的映射 -->
+    <convert converter="bean" match="java.lang.StackTraceElement"/>
+  </allow>
+</dwr>

@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+<LinearLayout
+    android:layout_width="fill_parent"
+    android:layout_height="80dp"
+    android:background="@color/blue">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="28dp"
+        android:layout_marginLeft="160dp"
+        android:layout_marginTop="25dp"
+        android:textColor="@color/white"
+        android:text="请假" />
+</LinearLayout>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="120dp"
+        android:orientation="vertical"
+        android:layout_marginTop="10dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:text="开始时间："
+            android:textSize="22dp"/>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+            <Spinner
+                android:layout_width="78dp"
+                android:layout_height="25dp"
+                android:layout_marginTop="10dp"
+                android:id="@+id/start_year"
+                android:entries="@array/year"
+                android:layout_marginLeft="20dp"></Spinner>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="年"
+                android:textSize="22dp"/>
+            <Spinner
+                android:layout_width="70dp"
+                android:layout_height="25dp"
+                android:layout_marginTop="10dp"
+                android:id="@+id/start_month"
+                android:entries="@array/month"></Spinner>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+
+                android:text="月"
+                android:textSize="22dp"/>
+            <Spinner
+                android:layout_width="70dp"
+                android:layout_height="25dp"
+                android:layout_marginTop="10dp"
+                android:id="@+id/start_day"
+                android:entries="@array/day"></Spinner>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+
+                android:text="日"
+                android:textSize="22dp"/>
+        </LinearLayout>
+ <LinearLayout
+     android:layout_width="fill_parent"
+     android:layout_height="fill_parent"
+     android:orientation="horizontal">
+     <Spinner
+     android:layout_width="80dp"
+     android:layout_height="25dp"
+     android:layout_marginTop="20dp"
+     android:layout_marginLeft="20dp"
+     android:id="@+id/start_time1"
+     android:entries="@array/time">
+
+     </Spinner>
+     <TextView
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_marginTop="20dp"
+
+         android:text="时 ——"
+         android:textSize="22dp"/>
+     <Spinner
+         android:layout_width="80dp"
+         android:layout_height="25dp"
+         android:layout_marginTop="20dp"
+         android:layout_marginLeft="20dp"
+         android:id="@+id/start_time2"
+         android:entries="@array/time">
+
+     </Spinner>
+     <TextView
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_marginTop="20dp"
+
+         android:text="时"
+         android:textSize="22dp"/>
+ </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="120dp"
+        android:orientation="vertical"
+     >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:text="结束时间："
+            android:textSize="22dp"/>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Spinner
+                android:layout_width="78dp"
+                android:layout_height="25dp"
+                android:layout_marginTop="10dp"
+                android:id="@+id/end_year"
+                android:entries="@array/year"
+                android:layout_marginLeft="20dp"></Spinner>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="年"
+                android:textSize="22dp"/>
+            <Spinner
+                android:layout_width="70dp"
+                android:layout_height="25dp"
+                android:layout_marginTop="10dp"
+                android:id="@+id/end_month"
+                android:entries="@array/month"></Spinner>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+
+                android:text="月"
+                android:textSize="22dp"/>
+            <Spinner
+                android:layout_width="70dp"
+                android:layout_height="25dp"
+                android:layout_marginTop="10dp"
+                android:id="@+id/end_day"
+                android:entries="@array/day"></Spinner>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+
+                android:text="日"
+                android:textSize="22dp"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="horizontal">
+            <Spinner
+                android:layout_width="80dp"
+                android:layout_height="25dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"
+                android:id="@+id/end_time1"
+                android:entries="@array/time">
+
+            </Spinner>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+
+                android:text="时 ——"
+                android:textSize="22dp"/>
+            <Spinner
+                android:layout_width="80dp"
+                android:layout_height="25dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"
+                android:id="@+id/end_time2"
+                android:entries="@array/time"></Spinner>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+
+                android:text="时"
+                android:textSize="22dp"/>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="140dp"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:text="请假原因："
+            android:textSize="22dp"/>
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:hint="请输入请假理由"/>
+    </LinearLayout>
+    <Button
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:background="@color/blue"
+        android:layout_gravity="center"
+        android:textColor="@color/white"
+        android:layout_marginTop="25dp"
+        android:text="提交"
+        android:textSize="20dp"
+        android:id="@+id/leave_submit"/>
+</LinearLayout>

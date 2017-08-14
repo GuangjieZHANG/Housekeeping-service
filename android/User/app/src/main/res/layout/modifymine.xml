@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="120dp"
+        android:background="@color/blue"
+        android:orientation="vertical"
+        >
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:gravity="center"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="170dp"
+            app:riv_border_color="#333333"
+            app:riv_border_width="2dp"
+            app:riv_corner_radius="10dp"
+            app:riv_mutate_background="true"
+            app:riv_oval="true"
+            android:background="@drawable/touxiang"/>
+       <!-- <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="点击上传头像"
+            android:gravity="center"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/white"/>-->
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="80dp"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="80dp"
+                android:text="   用户名："
+                android:textSize="20dp"
+                android:gravity="center"/>
+            <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:hint="请输入您的新用户名"
+            android:textSize="20sp"
+                android:id="@+id/newname"
+            />
+        </LinearLayout>
+
+
+
+            <com.baidu.mapapi.map.MapView
+                android:layout_width="fill_parent"
+                android:layout_height="250dp"
+                android:clickable="true"
+                android:id="@+id/maphome">
+
+            </com.baidu.mapapi.map.MapView>
+
+            <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="家庭住址："
+            android:textSize="18dp"
+            android:gravity="center"
+            android:layout_marginLeft="20dp"
+            android:id="@+id/homeaddress"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp">
+        <Button
+            android:layout_width="120dp"
+            android:layout_height="50dp"
+            android:background="@color/blue"
+            android:layout_marginLeft="30dp"
+            android:textColor="@color/white"
+            android:text="确认修改"
+            android:textSize="20dp"
+            android:id="@+id/modify"/>
+
+        <Button
+            android:layout_width="120dp"
+            android:layout_height="50dp"
+            android:background="@color/blue"
+            android:layout_marginLeft="30dp"
+            android:textColor="@color/white"
+            android:text="放弃修改"
+            android:textSize="20dp"
+            android:id="@+id/unmodify"
+            />
+    </LinearLayout>
+</LinearLayout>

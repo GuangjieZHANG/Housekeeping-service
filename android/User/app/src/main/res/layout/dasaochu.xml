@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="210dp"
+        android:background="@drawable/dasaochu"/>
+    <TextView
+        android:layout_marginTop="5dp"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:text="大扫除服务项目"
+        android:gravity="center"
+        android:textSize="22dp"/>
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="130dp"
+        android:textSize="18dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="20dp"
+        android:id="@+id/dasaochuintro"
+        android:text="简介：本公司提供的大扫除服务旨在为业主创造一个干净卫生的生活环境。通过一次彻底的大扫除，您的家中死角会被打扫干净，还要擦玻璃等等。"/>
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="80dp"
+        android:textSize="18dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="20dp"
+        android:id="@+id/dasaochuprice"
+        android:text="服务价格：40元/小时"/>
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:background="@color/blue"
+        android:textColor="@color/white"
+        android:textSize="15dp"
+        android:text="查看阿姨推荐"
+        android:id="@+id/goaunt_dasaochu"/>
+
+
+   <!-- <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_marginTop="5dp"
+        android:layout_height="match_parent"
+        tools:context="cn.ac.ucas.yp.uiwidgettest.ListViewActivity">
+
+
+    </RelativeLayout>-->
+</LinearLayout>

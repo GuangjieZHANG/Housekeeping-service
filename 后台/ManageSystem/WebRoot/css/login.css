@@ -1,0 +1,118 @@
+BODY {
+	SCROLLBAR-ARROW-COLOR: #939393; SCROLLBAR-FACE-COLOR: #ededed; BACKGROUND-COLOR: #ffffff; MARGIN: 0px; SCROLLBAR-DARKSHADOW-COLOR: #ffffff; SCROLLBAR-HIGHLIGHT-COLOR: #fafafa; SCROLLBAR-SHADOW-COLOR: #bdbdbd; FONT-SIZE: 9pt; SCROLLBAR-TRACK-COLOR: #f4f4f4; SCROLLBAR-3DLIGHT-COLOR: #ffffff
+}
+.INPUT {
+	BORDER-BOTTOM: #666666 1px solid; BORDER-LEFT: #666666 1px solid; BACKGROUND-COLOR: #ffffff; FONT-FAMILY: "宋体"; HEIGHT: 18px; COLOR: #666666; FONT-SIZE: 9pt; BORDER-TOP: #666666 1px solid; BORDER-RIGHT: #666666 1px solid
+}
+SELECT {
+	FONT-FAMILY: 宋体,Dotum,DotumCh, Arial; COLOR: #000000; FONT-SIZE: 9pt
+}
+TD {
+	LINE-HEIGHT: 150%; FONT-FAMILY: 宋体,Dotum,DotumChe,Arial; COLOR: #000000; FONT-SIZE: 9pt
+}
+A:link {
+	LINE-HEIGHT: 150%; FONT-FAMILY: 宋体,Dotum,DotumCh, Arial; COLOR: #000000; FONT-SIZE: 12px; TEXT-DECORATION: none
+}
+A:visited {
+	LINE-HEIGHT: 150%; FONT-FAMILY: 宋体,Dotum,DotumCh, Arial; COLOR: #000000; FONT-SIZE: 12px; TEXT-DECORATION: none
+}
+A:active {
+	LINE-HEIGHT: 150%; FONT-FAMILY: 宋体,Dotum,DotumCh, Arial; COLOR: #6440da; FONT-SIZE: 12px; TEXT-DECORATION: none
+}
+A:hover {
+	LINE-HEIGHT: 150%; FONT-FAMILY: 宋体,Dotum,DotumCh, Arial; COLOR: #6440da; FONT-SIZE: 12px; TEXT-DECORATION: underline
+}
+.font {
+	BACKGROUND-COLOR: #f2f2f2; COLOR: #ff0000; FONT-SIZE: 9px; TEXT-DECORATION: none
+}
+.input_login {
+	BORDER-BOTTOM: #ffffff 0px solid; BORDER-LEFT: #ffffff 0px solid; HEIGHT: 16px; FONT-SIZE: 9pt; BORDER-TOP: #ffffff 0px solid; BORDER-RIGHT: #ffffff 0px solid
+}
+.input_val {
+	BORDER-BOTTOM: #c0c0c0 1px solid; BORDER-LEFT: #ffffff 0px solid; BACKGROUND-COLOR: #fdfdfd; HEIGHT: 16px; FONT-SIZE: 9pt; BORDER-TOP: #ffffff 0px solid; BORDER-RIGHT: #ffffff 0px solid
+}
+.input_submit {
+	BORDER-BOTTOM: #dedfde 1px solid; BORDER-LEFT: #dedfde 1px solid; BACKGROUND-COLOR: #ffffff; FONT-SIZE: 9pt; BORDER-TOP: #dedfde 1px solid; BORDER-RIGHT: #dedfde 1px solid
+}
+.input_text {
+	BORDER-BOTTOM: #dedfde 1px solid; BORDER-LEFT: #dedfde 1px solid; FONT-SIZE: 9pt; BORDER-TOP: #dedfde 1px solid; BORDER-RIGHT: #dedfde 1px solid
+}
+.input_text1 {
+	BORDER-BOTTOM: #000000 1px solid; BORDER-LEFT: #000000 1px solid; BACKGROUND-COLOR: #ffffff; FONT-SIZE: 9pt; BORDER-TOP: #000000 1px solid; BORDER-RIGHT: #000000 1px solid
+}
+.border_bg {
+	BACKGROUND-COLOR: #ffffff; WIDTH: 100%
+}
+.copy {
+	BACKGROUND-COLOR: #000000; COLOR: #ffffff
+}
+/*Download by http://www.codefans.net*/
+.bgtop_center {
+	BACKGROUND: url(../images/bgtop_center.gif); HEIGHT: 20px
+}
+.bgbottom_center {
+	BACKGROUND: url(../images/bgbottom_center.gif); HEIGHT: 20px
+}
+.bgleft_center {
+	WIDTH: 20px; BACKGROUND: url(../images/bgleft_center.gif)
+}
+.bgright_center {
+	WIDTH: 20px; BACKGROUND: url(../images/bgright_center.gif)
+}
+.bgleft_top {
+	WIDTH: 20px; BACKGROUND: url(../images/bgleft_top.gif); HEIGHT: 20px
+}
+.bgcenter_left {
+	WIDTH: 20px; BACKGROUND: url(../images/bgcenter_left.gif); HEIGHT: 34px
+}
+.bgcenter_center {
+	BACKGROUND: url(../images/bgcenter_center.gif)
+}
+.bgcenter_right {
+	WIDTH: 20px; BACKGROUND: url(../images/bgcenter_right.gif); HEIGHT: 34px
+}
+.bgleft_bottom {
+	WIDTH: 20px; BACKGROUND: url(../images/bgleft_bottom.gif); HEIGHT: 20px
+}
+.bgright_top {
+	WIDTH: 20px; BACKGROUND: url(../images/bgright_top.gif); HEIGHT: 20px
+}
+.bgright_bottom {
+	WIDTH: 20px; BACKGROUND: url(../images/bgright_bottom.gif); HEIGHT: 20px
+}
+.left_top {
+	BACKGROUND: url(../images/left_top.gif); HEIGHT: 8px
+}
+.left_main {
+	PADDING-LEFT: 8px; PADDING-RIGHT: 8px; BACKGROUND: url(../images/left_main.gif)
+}
+.left_bottom {
+	BACKGROUND: url(../images/left_bottom.gif); HEIGHT: 8px
+}
+.left_tdbg {
+	BACKGROUND: #f5f5f5
+}
+.style1 {
+	LINE-HEIGHT: 150%; COLOR: #019ada
+}
+.style2 {
+	LINE-HEIGHT: 150%; COLOR: #ff6600
+}
+.style3 {
+	LINE-HEIGHT: 150%; COLOR: #f2f0ed
+}
+.style4 {
+	LINE-HEIGHT: 150%; COLOR: #ff0000
+}
+.style5 {
+	LINE-HEIGHT: 150%; COLOR: #ff0000; FONT-WEIGHT: bold
+}
+.main_tdbg {
+	BORDER-BOTTOM: #dcdcdc 1px solid; BORDER-LEFT: #dcdcdc 1px solid; LINE-HEIGHT: 150%; BACKGROUND: #f5f5f5; BORDER-TOP: #dcdcdc 1px solid; BORDER-RIGHT: #dcdcdc 1px solid
+}
+.main_title {
+	LINE-HEIGHT: 150%; COLOR: #000000; FONT-WEIGHT: bold
+}
+.main_tdbgmain {
+	LINE-HEIGHT: 150%; BACKGROUND: #fdfdfd
+}

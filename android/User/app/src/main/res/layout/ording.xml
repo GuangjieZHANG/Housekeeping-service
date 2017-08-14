@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+<LinearLayout
+    android:layout_width="fill_parent"
+    android:layout_height="80dp"
+    android:background="@color/blue">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+       android:layout_gravity="center"
+        android:layout_marginLeft="150dp"
+        android:text="下单"
+        android:textSize="20dp"
+        android:textColor="@color/white"
+        />
+</LinearLayout>
+
+
+    <LinearLayout
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="您已选择："
+        android:textSize="20dp"
+        android:layout_marginLeft="10dp"/>
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="经度："
+        android:textSize="20dp"
+        android:layout_marginLeft="40dp"
+        android:id="@+id/orderjingdu"/>
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="纬度："
+        android:textSize="20dp"
+        android:layout_marginLeft="40dp"
+        android:id="@+id/orderweidu"/>
+<LinearLayout
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    >
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="55dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/blue"
+        android:textColor="@color/white"
+        android:text="选择地址"
+        android:textSize="20dp"
+        android:id="@+id/gomap"/>
+  <!--  <Button
+        android:layout_width="150dp"
+        android:layout_height="55dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/blue"
+        android:textColor="@color/white"
+        android:text="选择阿姨"
+        android:textSize="20dp"
+        android:id="@+id/gochoseaunt"/>-->
+</LinearLayout>
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="120dp"
+                android:layout_height="50dp"
+                android:text="服务类型："
+                android:textSize="20dp"
+                android:gravity="center"/>
+
+
+            <RadioGroup
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/ordertype">
+
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp"
+                    android:text="大扫除   "
+                    android:id="@+id/ordertypesaochu"
+                    android:layout_marginLeft="20dp"
+                    android:checked="true"
+                    />
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp"
+                    android:text="日常保洁"
+                    android:layout_marginTop="-32dp"
+                    android:layout_marginLeft="150dp"
+                    android:id="@+id/ordertypebaojie"
+                    />
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp"
+                    android:text="地板打蜡"
+                    android:layout_marginLeft="20dp"
+                    android:id="@+id/ordertypedala"
+                    />
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp"
+                    android:text="真皮沙发保养"
+                    android:layout_marginTop="-32dp"
+                    android:layout_marginLeft="150dp"
+                    android:id="@+id/ordertypeshafa"
+                    />
+            </RadioGroup>
+
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="120dp"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+
+            android:text="  开始时间："
+            android:textSize="20dp"/>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="40dp">
+
+            <Spinner
+                android:layout_width="78dp"
+                android:layout_height="25dp"
+                android:layout_marginTop="10dp"
+                android:id="@+id/start_year"
+                android:entries="@array/year">
+
+            </Spinner>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="年"
+                android:textSize="20dp"/>
+            <Spinner
+                android:layout_width="60dp"
+                android:layout_height="25dp"
+                android:layout_marginTop="10dp"
+                android:id="@+id/start_month"
+                android:entries="@array/month">
+
+            </Spinner>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="月"
+                android:textSize="20dp"/>
+
+            <Spinner
+                android:layout_width="60dp"
+                android:layout_height="25dp"
+                android:layout_marginTop="10dp"
+                android:id="@+id/start_day"
+                android:entries="@array/day">
+
+            </Spinner>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="日"
+                android:textSize="20dp"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <Spinner
+                android:layout_width="80dp"
+                android:layout_height="25dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="40dp"
+                android:id="@+id/start_time1"
+                android:entries="@array/time">
+
+            </Spinner>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+
+                android:text="时 ——"
+                android:textSize="20dp"/>
+            <Spinner
+                android:layout_width="80dp"
+                android:layout_height="25dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"
+                android:id="@+id/start_time2"
+                android:entries="@array/time">
+
+            </Spinner>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:text="时"
+                android:textSize="20dp"/>
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical">
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="55dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="15dp"
+            android:text="提交"
+            android:textSize="20dp"
+            android:textColor="#ffffff"
+            android:background="#0082e4"
+            android:id="@+id/submitorder"/>
+    </LinearLayout>
+
+
+</LinearLayout>
